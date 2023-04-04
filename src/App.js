@@ -14,13 +14,16 @@ function App() {
   return (
     <>
     <NavBar />
+    <div className="mainDiv">
     {/* <Home data={tourData}/> */}
     <Routes>
         <Route exact path="/" element={<Home data={tourData}/>}/>
         {/* <Route path={`/${props.element.name}/${props.element.id}`} element={<TourDetails />}/> */}
-        <Route exact path={"/city/:id"} element={<TourDetails data={tourData}/>}/>
+        <Route exact path={"/:city/:id"} element={<TourDetails data={tourData}/>}/>
     </Routes>
+    </div>
     <Footer />
+    
     </>
   );
 }

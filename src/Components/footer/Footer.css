@@ -1,0 +1,14 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    color: aliceblue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(40, 7, 159);
+    height: 80px;
+}
+.link{
+    color: aliceblue;
+}
