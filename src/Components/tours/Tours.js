@@ -1,12 +1,18 @@
+import Tour from "./Tour/Tour";
 function Tours(props) {
-    // console.log(props+"111111111111")
+    // console.log(props,"111")
     return (
-        <div>
-            <h2>{props.tour_name}</h2>
-            <img src={props.tour_url} alt={props.tour_name}/>
-
-            <h1>--------------------------------------------------------------------------</h1>
-        </div>
+       <>
+       {
+        props.data.map(element =>{
+            console.log(props.info)
+            return(
+                <Tour element={element} key={element.id}/>
+            )
+        })
+       }
+         {/* <Tour data={props.data}/> */}
+       </>
             
     )
 }
